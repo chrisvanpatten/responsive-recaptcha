@@ -14,11 +14,15 @@ Here's what you need:
 
 ## Other notes
 
-If you're using an existing reCAPTCHA library, you might want to add the custom HTML to the `recaptcha_get_html` output function to simplify the process of adding reCAPTCHAs.
+If you're using an existing reCAPTCHA library, you might want to add the custom HTML to the output function (`recaptcha_get_html` in PHP, for example) to simplify the process of adding reCAPTCHAs.
 
-Also, in my original implementation (visible above) I used the wonderful <a href="https://github.com/nathansmith/formalize">Formalize</a> from @nathansmith. It's not required, but I can't recommend it highly enough.
+My original implementation (visible above) used the wonderful <a href="https://github.com/nathansmith/formalize">Formalize</a> from @nathansmith. It's not required and I didn't bundle it here, but I can't recommend it highly enough.
 
 If you want to customize this further and have questions, feel free to ask or consult <a href="https://developers.google.com/recaptcha/docs/customization">Google's documentation</a> on the subject.
+
+## Caution
+
+**Use wisely.** I don't have a `min-width` set on the captcha, and if you're not careful the captcha could get too small to read! Make sure you test thoroughly on various devices at various widths to make sure that won't be an issue.
 
 ## Unlicense
 
