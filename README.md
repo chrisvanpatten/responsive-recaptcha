@@ -2,7 +2,7 @@
 
 This is a quick theme for <a href="https://www.google.com/recaptcha">reCAPTCHA</a> that makes it friendlier to responsive websites, specifically on mobile interfaces where you might need the captcha narrower than 300px wide.
 
-<img src="http://i.imgur.com/qfwQu.png" alt="Responsive reCAPTCHA screenshot">
+<img src="http://i.imgur.com/lWuCN.png" alt="Responsive reCAPTCHA screenshot">
 
 ## Prerequisites
 
