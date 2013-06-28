@@ -24,12 +24,12 @@ If you want to customize this further and have questions, feel free to ask or co
 
 If you're a SASS/Compass user, you can customize the colors with some easy included variables. They are:
 
-`$recaptcha-base-color`
-`$recaptcha-border-radius`
-`$recaptcha-border-radius-inner`
-`$recaptcha-input-background`
-`$recaptcha-icons-color`
-`$recaptcha-icons-shadow`
++ `$recaptcha-base-color`
++ `$recaptcha-border-radius`
++ `$recaptcha-border-radius-inner`
++ `$recaptcha-input-background`
++ `$recaptcha-icons-color`
++ `$recaptcha-icons-shadow`
 
 Simply include these variables before you import `recaptcha.scss` and it should use them with no trouble.
 
