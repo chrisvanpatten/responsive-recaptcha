@@ -2,13 +2,21 @@
 @import "compass/reset";
 @import "compass/css3";
 
+// Settings
+$recaptcha-border-color: #AF1500 !default;
+$recaptcha-border-radius: 4px !default;
+$recaptcha-border-radius-inner: 2px !default;
+$recaptcha-input-background: #FFDC73 !default;
+$recaptcha-icons-color: white !default;
+$recaptcha-icons-shadow: 0 1px 1px black !default;
+
 // reCAPTCHA container
 .recaptcha_widget {
 	@include box-sizing('border-box');
 	max-width: 300px;
-	border: 4px solid #AF1500;
-	@include border-radius(4px);
-	background: #AF1500;
+	border: 4px solid $recaptcha-border-color;
+	@include border-radius( $recaptcha-border-radius );
+	background: $recaptcha-border-color;
 	margin: 0 0 10px;
 }
 
@@ -21,7 +29,7 @@
 		@include box-sizing('border-box');
 		width: 100%;
 		height: auto;
-		@include border-radius(2px);
+		@include border-radius( $recaptcha-border-radius-inner );
 		border: 3px solid #FFF;
 	}
 }
@@ -39,7 +47,7 @@
 		width: 100%;
 		height: 60px;
 		background: #FFF;
-		@include border-radius(2px);
+		@include border-radius( $recaptcha-border-radius-inner );
 		border: 3px solid #FFF;
 
 		br {
@@ -54,13 +62,13 @@
 
 // Input area container
 .recaptcha_input {
-	background: #FFDC73;
+	background: $recaptcha-input-background;
 	color: #000;
 	font: 13px/1.5 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, 'Liberation Sans', FreeSans, sans-serif;
 	margin: 4px 0 0;
 	padding: 0 4px 4px;
-	border: 4px solid #FFDC73;
-	@include border-radius(2px);
+	border: 4px solid $recaptcha-input-background;
+	@include border-radius( $recaptcha-border-radius-inner );
 
 	label {
 		margin: 0 0 6px;
@@ -84,9 +92,9 @@
 
 		a {
 			text-decoration: none;
-			@include text-shadow(0 1px 1px #000);
+			@include text-shadow( $recaptcha-icons-shadow );
 			font-size: 16px;
-			color: #FFF;
+			color: $recaptcha-icons-color;
 			display: block;
 			width: 20px;
 			height: 18px;
