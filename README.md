@@ -20,6 +20,21 @@ My original implementation (visible above) used the wonderful <a href="https://g
 
 If you want to customize this further and have questions, feel free to ask or consult <a href="https://developers.google.com/recaptcha/docs/customization">Google's documentation</a> on the subject.
 
+## Customising colours
+
+If you're a SASS/Compass user, you can customize the colors with some easy included variables. They are:
+
+`$recaptcha-base-color`
+`$recaptcha-border-radius`
+`$recaptcha-border-radius-inner`
+`$recaptcha-input-background`
+`$recaptcha-icons-color`
+`$recaptcha-icons-shadow`
+
+Simply include these variables before you import `recaptcha.scss` and it should use them with no trouble.
+
+Note: the default values are listed in `recaptcha.scss`, in the "Settings" section.
+
 ## Caution
 
 **Use wisely.** I don't have a `min-width` set on the captcha, and if you're not careful the captcha could get too small to read! Make sure you test thoroughly on various devices at various widths to make sure that won't be an issue.
