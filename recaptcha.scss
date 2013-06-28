@@ -3,7 +3,7 @@
 @import "compass/css3";
 
 // Settings
-$recaptcha-border-color: #AF1500 !default;
+$recaptcha-base-color: #AF1500 !default;
 $recaptcha-border-radius: 4px !default;
 $recaptcha-border-radius-inner: 2px !default;
 $recaptcha-input-background: #FFDC73 !default;
@@ -14,9 +14,9 @@ $recaptcha-icons-shadow: 0 1px 1px black !default;
 .recaptcha_widget {
 	@include box-sizing('border-box');
 	max-width: 300px;
-	border: 4px solid $recaptcha-border-color;
+	border: 4px solid $recaptcha-base-color;
 	@include border-radius( $recaptcha-border-radius );
-	background: $recaptcha-border-color;
+	background: $recaptcha-base-color;
 	margin: 0 0 10px;
 }
 
