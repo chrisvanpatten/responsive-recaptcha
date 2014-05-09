@@ -9,7 +9,7 @@ This is a quick theme for <a href="https://www.google.com/recaptcha">reCAPTCHA</
 Here's what you need:
 
 *   You should have reCAPTCHA set up already
-*   If you want to work with the SASS file, you will need <a href="http://compass-style.org/">Compass</a>.
+*   If you want to work with the <a href="http://sass-lang.com/">Sass</a> file, you will need <a href="http://compass-style.org/">Compass</a>.
 *   <a href="http://fortawesome.github.com/Font-Awesome/">Font-Awesome</a> is referenced for the icons (but any icon font, or images, would work)
 
 ## Other notes
@@ -22,7 +22,7 @@ If you want to customize this further and have questions, feel free to ask or co
 
 ## Customising colours
 
-If you're a SASS/Compass user, you can customize the colors with some easy included variables. They are:
+If you're a Sass/Compass user, you can customize the colors with some easy included variables. They are:
 
 + `$recaptcha-base-color`
 + `$recaptcha-border-radius`
